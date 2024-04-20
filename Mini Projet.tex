@@ -8,6 +8,7 @@
 \usepackage{setspace}
 \usepackage{xcolor}
 \usepackage{colortbl}
+\usepackage{caption}
 \geometry{
     top=1in,
     bottom=1in,
@@ -114,32 +115,29 @@ CHAPTER 1.  REQUIREMENTS SPECIFICATION \\
 \\The backlog product is a prioritized list of tasks essential for developing the project, structured according to the levels necessary to meet system requirements. This hierarchical organization ensures that the most critical tasks are placed at the top level, enabling the development team to identify and focus on delivering them first. By following this approach, the team can streamline their efforts, ensuring that the project progresses in alignment with the system's overarching goals and priorities.\vspace{0.8cm}
 \begin{table}[h]
     \centering
-    \begin{tabularx}{\textwidth}{lXc}
+    \begin{tabularx}{\textwidth}{lX@{\hspace{1em}}c@{\hspace{7em}}c} 
         \toprule
-        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority} & \textbf{\color{blue!70} Estimation} \\ 
+        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority} & \textbf{\color{blue!70} Sprint} & \textbf{\color{blue!70} Estimation} \\ 
         \midrule
-        As a user, I can authenticate &\hspace{1em} 1 & Medium \\
+        As a user, I can authenticate & 1 & 0 & Medium \\
         \midrule
-        As a User, I can add recipes &\hspace{1em} 1 & Medium \\
+        As a User, I can add recipes & 1 & 0 & Medium \\
         \midrule
-        As an Admin, I can authenticate &\hspace{1em} 1 & Low \\
+        As an Admin, I can authenticate & 1 & 0 & Low \\
         \midrule
-        As an admin, I can manage categories &\hspace{1em} 1 & Medium \\
+        As an admin, I can manage categories & 1 & 0 & Medium \\
         \midrule
-        As a user, I can contact other users &\hspace{1em} 2 & High \\
+        As a user, I can contact other users & 2 & 1 & High \\
         \midrule
- 	As a User I can consult recipes &\hspace{1em} 2 & Medium \\
+        As a User I can view recipes & 2 & 1& Medium \\
         \midrule
-        As an admin, I can manage users &\hspace{1em} 2 & High \\
-        \midrule
-        As a user, I can give opinions &\hspace{1em} 2 & Medium \\
-        \midrule
-        As an admin, I can follow recipes &\hspace{1em} 2 & Medium \\
+        As an admin, I can manage users & 2 & 1 & High \\
         \bottomrule
     \end{tabularx}
     \caption{Product backlog}
     \label{tab:user_stories}
 \end{table}
+
 \newpage
 \noindent
 CHAPTER 1.  REQUIREMENTS SPECIFICATION \\
@@ -171,7 +169,7 @@ CHAPTER 1.  REQUIREMENTS SPECIFICATION \\
 \end{figure}
 
 \paragraph{Visual Studio Code :} 
-created by Microsoft is a popular source code editor available for all major operating systems It's favored by developers for its free access and essential features like smart code completion, debugging tools, and built-in Git support.
+Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C\#, Java, Python, PHP, Go, .NET)(microsoft)
 
 \vspace{1cm}
 
@@ -183,7 +181,7 @@ created by Microsoft is a popular source code editor available for all major ope
 \end{figure}
 
 \paragraph{PHP :} 
-is a popular server-side scripting language primarily used for web development. It's known for its simplicity, flexibility, and wide support across various platforms and operating systems PHP is commonly embedded within HTML code to create dynamic web pages, interact with databases, handle forms, and manage sessions.
+(recursive acronym for PHP: Hypertext Preprocessor ) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML(PHP documentation)
 \vspace{1cm}
 \newpage
 \noindent
@@ -196,7 +194,7 @@ CHAPTER 1.  REQUIREMENTS SPECIFICATION \\
     \label{fig:design3}
 \end{figure}
 \paragraph{Angular :} 
-is a TypeScript-based open-source front-end web application framework maintained by Google. It is widely used for building dynamic single-page web applications (SPAs) and complex user interfaces. Angular provides a structured framework with features like data binding, dependency injection, and modular development, making it easier for developers to create scalable and maintainable applications.
+is a TypeScript-based open-source web application framework primarily maintained by Google and a community of developers. It is used for building dynamic single-page web applications (SPAs) and offers a comprehensive solution that includes features such as data binding, dependency injection, routing, and much more. Angular provides a structured framework that follows the Model-View-Controller (MVC) or Model-View-ViewModel (MVVM) architectural patterns, facilitating the development of scalable and maintainable web applications.( Angular Official Website)
 \vspace{1cm}
 
 \begin{figure}[htbp]
@@ -206,7 +204,8 @@ is a TypeScript-based open-source front-end web application framework maintained
     \label{fig:design4}
 \end{figure}
 \paragraph{MySQL :} 
- is an open-source relational database management system (RDBMS) that is widely used for managing and organizing data in various applications. It is known for its reliability, scalability, and ease of use, making it a popular choice for both small-scale and large-scale projects.
+is a relational database management system
+The database structure is organized into physical files optimized for speed. The logical data model, with objects such as data tables, views, rows, and columns, offers a flexible programming environment.(oracle)
 \vspace{1cm} 
 \newpage
 \noindent
@@ -219,7 +218,7 @@ CHAPTER 1.  REQUIREMENTS SPECIFICATION \\
     \label{fig:design5}
 \end{figure}
 \paragraph{XAMPP :} 
-is a free and open-source cross-platform web server solution stack package developed by Apache Friends. The name "XAMPP" stands for Cross-Platform (X), Apache (A), MySQL (M), PHP (P), and Perl (P), indicating the core components included in the package. It is designed to facilitate easy setup and deployment of a local development environment for web development purposes.
+is an open-source software package that provides a local web server environment for testing and development. It helps you test web applications locally before deployment, ensuring they function correctly on a live server.(edX)
 \vspace{1cm}
 
 \begin{figure}[htbp]
@@ -229,22 +228,71 @@ is a free and open-source cross-platform web server solution stack package devel
     \label{fig:design6}
 \end{figure}
 \paragraph{PowerAMC :} 
-UML tool developed by MKLab. It supports nearly all the diagram types listed in UML.\vspace{1cm}\\
+PowerAMC supports UML object modeling and data modeling. It is interesting for customers to use the same tool to define objects, database schema, O/R mapping, and to generate the database schema, Java classes and JDO persistence descriptor with O/R mapping definition.(sybase)\vspace{1cm}\\
 {\Large \textbf{1.6\hspace{1em}Conclusion}}\vspace{0.2cm}\\
 In our first chapter, we began by thoroughly detailing the requirements specification process, followed by identifying the actors involved in our system. We then simplified these findings into a concise diagram for easy understanding. Transitioning to our methodology, we highlighted our utilization of the agile Scrum approach for effective project management. Lastly, we rounded off by outlining the software tools integral to our project's development and organization.
+\newpage
+\section*{\Huge CHAPTER 2\vspace{0.5cm}\\Sprint 0}
+\vspace{1.5cm}
 
+{\Large \textbf{2.1\hspace{1em}Introduction}}\vspace{0.2cm}
+\\empty
+\\{\Large \textbf{2.2\hspace{1em}Identification of Sprint 0 Backlog}}\vspace{0.2cm}
+\\The following table contains the backlog elements that are realised during the sprint 0 : 
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{lX@{\hspace{1em}}c@{\hspace{7em}}c} 
+        \toprule
+        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority} & \textbf{\color{blue!70} Sprint} & \textbf{\color{blue!70} Estimation} \\ 
+        \midrule
+        As a user, I can authenticate & 1 & 0 & Medium \\
+        \midrule
+        As a User, I can add recipes & 1 & 0 & Medium \\
+        \midrule
+        As an Admin, I can authenticate & 1 & 0 & Low \\
+        \midrule
+        As an admin, I can manage categories & 1 & 0 & Medium \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Product backlog Sprint 0}
+    \label{tab:user_stories}
+\end{table}
+\\{\Large \textbf{2.3\hspace{1em}Refinement of sprint 0}}\vspace{0.2cm}
+\\In this section, we examine various use-case scenarios for the initial sprint.
+\\{\large \textbf{Refinement of the user story ”authenticate”}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.3\textwidth]{Authenticate}
+    \caption{use case diagram “authenticate”}
+    \label{fig:design2}
+\end{figure}
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
 
-
-
-
-
-
-
-       
-
-
-
-
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{2em}}c@{\hspace{2em}}c@{}}
+        \toprule
+        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority}\\ 
+        \midrule
+        Use Case Scenario & 1\\
+        \midrule
+        As a User, I can add recipes & 1 \\
+        \midrule
+        As an Admin, I can authenticate & 1\\
+        \midrule
+        As an admin, I can manage categories & 1\\
+        \midrule
+        As a user, I can contact other users & 2\\
+        \midrule
+        As a User I can view recipes & 2 \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Product backlog}
+    \label{tab:user_stories}
+\end{table}
 
 
 
