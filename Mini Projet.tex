@@ -126,6 +126,8 @@ CHAPTER 1.  REQUIREMENTS SPECIFICATION \\
         \midrule
         As an admin, I can manage categories & 1 & 0 & Medium \\
         \midrule
+	As an admin, I can authenticate & 1 & 0 & Medium \\
+        \midrule
         As a user, I can contact other users & 2 & 1 & High \\
         \midrule
         As a User I can view recipes & 2 & 1& Medium \\
@@ -247,6 +249,8 @@ In our first chapter, we began by thoroughly detailing the requirements specific
         As a User, I can authenticate & 1 & 0 & Medium \\
         \midrule
         As a User, I can add recipes & 1 & 0 & Medium \\
+        \midrule
+	 As an admin, I can authenticate & 1 & 0 & Medium \\
         \midrule
         As an admin, I can manage categories & 1 & 0 & Medium \\
         \bottomrule
@@ -374,11 +378,18 @@ CHAPTER 2.  Sprint 0 \\
 \underline{\hspace{\textwidth}} \vspace{0.2cm}\\
 \\{\Large \textbf{2.4\hspace{1em}Conception of Sprint 0}}\vspace{0.2cm}
 
-The following figure represents the sequence diagram of Authenticate.\\
+The following figure represents the class diagram of Authenticate.\\
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{autdia}
+    \includegraphics[width=0.5\textwidth]{autdia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+The following figure represents the sequence diagram of Authenticate.\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{autdia}
     \caption{use case diagram “View recipes”}
     \label{fig:design2}
 \end{figure}
@@ -387,11 +398,18 @@ The following figure represents the sequence diagram of Authenticate.\\
 \noindent
 CHAPTER 2.  Sprint 0 \\
 \underline{\hspace{\textwidth}} \vspace{0.2cm}\\
-The following figure represents the sequence diagram of Add recipes.\\
+The following figure represents the class diagram of Add recipes.\\
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{adddia}
+    \includegraphics[width=0.5\textwidth]{adddia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+The following figure represents the sequence diagram of Add recipes.\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{adddia}
     \caption{use case diagram “View recipes”}
     \label{fig:design2}
 \end{figure}
@@ -400,11 +418,18 @@ The following figure represents the sequence diagram of Add recipes.\\
 \noindent
 CHAPTER 2.  Sprint 0 \\
 \underline{\hspace{\textwidth}} \vspace{0.2cm}\\
-The following figure represents the sequence diagram of Manage categories.\\
+The following figure represents the class diagram of Manage categories.\\
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{mandia}
+    \includegraphics[width=0.5\textwidth]{mandia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+The following figure represents the sequence diagram of Manage categories.\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{mandia}
     \caption{use case diagram “View recipes”}
     \label{fig:design2}
 \end{figure}
@@ -710,11 +735,11 @@ CHAPTER 3.  Sprint 1 \\
         \toprule
         Use Case Scenario & Manage Users \\
         \midrule
-        Actors & User \\
+        Actors & Admin \\
         \midrule
         Pre-Conditions & \begin{itemize}[label=$\bullet$]
-\item The user must be authenticated 
-\item the system in operation
+\item The administrator must be authenticated 
+\item The system in operation
  \end{itemize} \\
         \midrule
 	 Post-Conditions & Users Managed  \\
@@ -733,6 +758,67 @@ CHAPTER 3.  Sprint 1 \\
 
 
 
+\newpage
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+\\{\Large \textbf{3.4\hspace{1em}Conception of Sprint 1}}\vspace{0.2cm}
+
+The following figure represents the class diagram of View recipes.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{autdia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+The following figure represents the sequence diagram of View recipes.\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{autdia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+%--------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+The following figure represents the class diagram of Contact other Useres.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{adddia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+The following figure represents the sequence diagram of Contact other Useres.\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{adddia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+%------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+The following figure represents the class diagram of Manage Users.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{mandia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+The following figure represents the sequence diagram of Manage Users.\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{mandia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
 
 
 
@@ -755,7 +841,35 @@ CHAPTER 3.  Sprint 1 \\
 
 
 
-%%---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%--end conception sprint 1-------------------------------------------------------------------------------------------------------------------------------------------------------
 \newpage
 \noindent
 CHAPTER 3.  Sprint 1 \\
