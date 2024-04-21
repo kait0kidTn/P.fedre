@@ -303,7 +303,7 @@ CHAPTER 2.  Sprint 0 \\
 {\large \textbf{Refinement of the user story ”Add Recipes”}
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.3\textwidth]{Authenticate}
+    \includegraphics[width=0.5\textwidth]{Addrecipee}
     \caption{use case diagram “Add Recipes”}
     \label{fig:design2}
 \end{figure}
@@ -345,21 +345,57 @@ CHAPTER 2.  Sprint 0 \\
     \centering
     \begin{tabularx}{\textwidth}{X|X}
         \toprule
-        Use Case Scenario & Manage Categories \\
+        Use Case Scenario & Give Opinions \\
         \midrule
-        Actors & Admin \\
+        Actors & User \\
         \midrule
         Pre-Conditions & \begin{itemize}[label=$\bullet$]
             \item The administrator must be authenticated
-            \item The system in operation
+           
         \end{itemize} \\
         \midrule
-        Post-Conditions & Categories Managed  \\
+        Post-Conditions & Opinion Given  \\
         \midrule
         Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
-            \item The system displays the interface
-            \item The admin chooses the operation
-            \item The system displays the interface according to the choice of the admin
+            \item - The user clicks on the recipe
+            \item- The system displays the recipe interface
+	\item- The user reacts to the recipe with a heart and writes a comment
+           
+        \end{itemize} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
+\end{table}
+\newpage
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Manage}
+    \caption{use case diagram “Manage Categories”}
+    \label{fig:design2}
+\end{figure}
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+        \toprule
+        Use Case Scenario & Save Recipes\\
+        \midrule
+        Actors & User \\
+        \midrule
+        Pre-Conditions & \begin{itemize}[label=$\bullet$]
+            \item The user must be authenticated
+           
+        \end{itemize} \\
+        \midrule
+        Post-Conditions & Recipe saved  \\
+        \midrule
+        Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
+            \item - The user clicks on the save button below any recipe
+            \item- The system displays a message : "Recipe saved"
+	
+           
         \end{itemize} \\
         \bottomrule
     \end{tabularx}
@@ -370,6 +406,248 @@ CHAPTER 2.  Sprint 0 \\
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Addrecipee}
+    \caption{use case diagram “Contact other users”}
+    \label{fig:design2}
+\end{figure}
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+        \toprule
+        Use Case Scenario & Contact other users \\
+        \midrule
+        Actors & User \\
+        \midrule
+        Pre-Conditions & The user must be authenticated \\
+        \midrule
+	 Post-Conditions & Other users contaced  \\
+        \midrule
+        Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
+            \item The user clicks on the recipe
+            \item The system displays recipe
+            \item The user clicks on the "Contact The Publisher" button
+        \end{itemize} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Addrecipee}
+    \caption{use case diagram “Manage Users”}
+    \label{fig:design2}
+\end{figure}
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+        \toprule
+        Use Case Scenario & Manage Users \\
+        \midrule
+        Actors & User \\
+        \midrule
+        Pre-Conditions & \begin{itemize}[label=$\bullet$]
+\item The user must be authenticated 
+\item the system in operation
+ \end{itemize} \\
+        \midrule
+	 Post-Conditions & Users Managed  \\
+        \midrule
+        Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
+            \item - The administrator chooses whether to add or ban users
+            \item- The administrator chooses to add or remove moderators
+    
+        \end{itemize} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+%%---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{lX@{\hspace{1em}}c@{\hspace{7em}}c} 
+        \toprule
+        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority} & \textbf{\color{blue!70} Sprint} & \textbf{\color{blue!70} Estimation} \\ 
+        \midrule
+
+        As a user, I can contact other users & 2 & 1 & High \\
+        \midrule
+        As a User I can view recipes & 2 & 1& Medium \\
+        \midrule
+        As an admin, I can manage users & 2 & 1 & High \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{wlcm} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Home Page \\
+    The user interacts with this interface to sign in or log in. A sign-up form will pop up when the user presses the "Sign Up" button.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Sign Up} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Sign Up Page \\
+    The user interacts with this interface to sign up for a new account.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{LogIn} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Log In Page \\
+    If the user already has an account, a "Log In" page will appear when the Log In button is clicked.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ViewRecipes} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} View Recipes Page \\
+    The user can view other users' recipes using this interface.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ViewRecipes2} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} View Recipes Page (Detail) \\
+    When the user clicks on a recipe, the website will display the recipe details, including any available video. The user can interact with the recipe by saving it, liking it, commenting on it, viewing ingredients, or contacting the publisher.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Contact} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Contact Publisher Interface \\
+    When the user clicks on the "Contact the Publisher" button, a small chat room will be created between the user and the publisher.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ManageUser} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Manage Users Interface \\
+    The admin can manage all users, including updating user information or deleting users. When the admin clicks the "Update" button, another page will open to update user information.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{UpdateUser} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Update User Page \\
+    The admin can update user information using this interface.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ManageRecipes} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Manage Recipes Interface \\
+    The admin can manage recipes using this interface. Clicking the "View" button will display all comments on that recipe, allowing the admin to delete them. Clicking the "Update" button will open another page to update the recipe name and category.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{edit} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Edit Recipe Page \\
+    The admin can edit recipes using this interface.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{manegecat} 
+    \vspace{0.5cm}
+    
+    \textbf{Figure:} Manage Categories Interface \\
+    The admin can manage categories using this interface.
+\end{figure}
 
 
 
