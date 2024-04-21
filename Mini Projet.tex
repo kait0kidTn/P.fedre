@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{colortbl}
 \usepackage{caption}
+\usepackage{hyperref}
 \geometry{
     top=1in,
     bottom=1in,
@@ -122,8 +123,6 @@ CHAPTER 1.  REQUIREMENTS SPECIFICATION \\
         As a user, I can authenticate & 1 & 0 & Medium \\
         \midrule
         As a User, I can add recipes & 1 & 0 & Medium \\
-        \midrule
-        As an Admin, I can authenticate & 1 & 0 & Low \\
         \midrule
         As an admin, I can manage categories & 1 & 0 & Medium \\
         \midrule
@@ -330,6 +329,8 @@ CHAPTER 2.  Sprint 0 \\
     \label{tab:actors_roles}
 \end{table}
 
+
+
 \newpage
 \noindent
 CHAPTER 2.  Sprint 0 \\
@@ -339,6 +340,224 @@ CHAPTER 2.  Sprint 0 \\
     \centering
     \includegraphics[width=0.5\textwidth]{Manage}
     \caption{use case diagram “Manage Categories”}
+    \label{fig:design2}
+\end{figure}
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+        \toprule
+        Use Case Scenario & Manage Categories \\
+        \midrule
+        Actors & Admin \\
+        \midrule
+        Pre-Conditions & \begin{itemize}[label=$\bullet$]
+            \item The administrator must be authenticated
+            \item The system in operation
+        \end{itemize} \\
+        \midrule
+        Post-Conditions & Categories Managed  \\
+        \midrule
+        Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
+            \item The system displays the interface
+            \item The admin chooses the operation
+            \item The system displays the interface according to the choice of the admin
+        \end{itemize} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
+\end{table}
+%-------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+\\{\Large \textbf{2.4\hspace{1em}Conception of Sprint 0}}\vspace{0.2cm}
+
+The following figure represents the sequence diagram of Authenticate.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{autdia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+%--------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+The following figure represents the sequence diagram of Add recipes.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{adddia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+%------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+The following figure represents the sequence diagram of Manage categories.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{mandia}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+%------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+ {\Large \textbf{2.5\hspace{1em}Realization of Sprint 0}}\vspace{0.2cm}\\
+
+\textbf{Realization of the user story “authenticate”}\\
+the following figure displays the login interface used by all users. It includes two fields for entering their credentials. Once authenticated, users can access role-specific dashboards.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{wlcm} 
+    \vspace{0.5cm}
+    \textbf{Figure:} Home Page \\
+    The user interacts with this interface to sign in or log in. A sign-up form will pop up when the user presses the "Sign Up" button.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{logtaste}
+    \caption{Authenticate Interface}
+    \label{fig:design2}
+\end{figure}
+%--------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+
+\textbf{Realization of the user story “Add Recipes”}\\
+The image exhibits the Add Recipes interface accessible to all users, presenting six fields for inputting Recipe information. Upon completion, users can simply click 'Add Recipe' to publish it.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{addpic}
+    \caption{Add Recipes Interface}
+    \label{fig:design2}
+\end{figure}
+%----------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+
+\textbf{Realization of the user story “Manage Categories”}\\
+The depicted figure showcases the admin's interface for managing categories, allowing him to add, edit, or delete categories as needed.\\
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{mapic}
+    \caption{Manage categories Interface}
+    \label{fig:design2}
+\end{figure}
+ {\Large \textbf{2.6\hspace{1em}Conclusion}}\vspace{0.2cm}\\
+empty
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\section*{\Huge CHAPTER 3\vspace{0.5cm}\\Sprint 1}
+\vspace{1.5cm}
+
+{\Large \textbf{3.1\hspace{1em}Introduction}}\vspace{0.2cm}
+\\empty
+\\{\Large \textbf{3.2\hspace{1em}Identification of Sprint 1 Backlog}}\vspace{0.2cm}
+\\The following table contains the backlog elements that are realised during the sprint 1 :
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{lX@{\hspace{1em}}c@{\hspace{7em}}c} 
+        \toprule
+        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority} & \textbf{\color{blue!70} Sprint} & \textbf{\color{blue!70} Estimation} \\ 
+        \midrule
+
+         As a User I can view recipes & 2 & 1& Medium \\
+        \midrule
+        As a user, I can contact other users & 2 & 1 & High \\
+        \midrule
+        As an admin, I can manage users & 2 & 1 & High \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+\\{\Large \textbf{3.3\hspace{1em}Refinement of sprint 1}}\vspace{0.2cm}
+\\In this section, we examine various use-case scenarios for the sprint 1.\\
+{\large \textbf{Refinement of the user story ”View recipes ”}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{view}
+    \caption{use case diagram “View recipes”}
+    \label{fig:design2}
+\end{figure}
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+        \toprule
+        Use Case Scenario & View recipes  \\
+        \midrule
+        Actors & User \\
+        \midrule
+        Pre-Conditions &  The user must be authenticated \\
+        \midrule
+        Post-Conditions & Recipe accessed  \\
+        \midrule
+        Describe Main Scenario &  
+        \begin{itemize}[label=$\bullet$]
+            \item The user clicks on the recipe
+            \item The system displays the recipe interface
+            \item The user selects their preferred format for viewing the recipe: either video or text 
+        \end{itemize} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
+\end{table}
+
+
+
+
+%-------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+{\large \textbf{Refinement of the user story ”Give Opinions”}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{opin}
+    \caption{use case diagram “Give Opinions”}
     \label{fig:design2}
 \end{figure}
 \begin{table}[h]
@@ -368,12 +587,14 @@ CHAPTER 2.  Sprint 0 \\
     \label{tab:actors_roles}
 \end{table}
 \newpage
-
-
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+{\large \textbf{Refinement of the user story ”Save Recipes”}
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{Manage}
-    \caption{use case diagram “Manage Categories”}
+    \includegraphics[width=0.5\textwidth]{save}
+    \caption{use case diagram “Save Recipes”}
     \label{fig:design2}
 \end{figure}
 \begin{table}[h]
@@ -425,11 +646,13 @@ CHAPTER 2.  Sprint 0 \\
 
 
 \newpage
-
-
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+{\large \textbf{Refinement of the user story ”Contact other users"}
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{Addrecipee}
+    \includegraphics[width=0.5\textwidth]{conta}
     \caption{use case diagram “Contact other users”}
     \label{fig:design2}
 \end{figure}
@@ -471,11 +694,13 @@ CHAPTER 2.  Sprint 0 \\
 
 
 \newpage
-
-
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+{\large \textbf{Refinement of the user story ”Manage Users”}
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{Addrecipee}
+    \includegraphics[width=0.5\textwidth]{muse}
     \caption{use case diagram “Manage Users”}
     \label{fig:design2}
 \end{figure}
@@ -504,6 +729,7 @@ CHAPTER 2.  Sprint 0 \\
     \caption{Detailed description of the actors}
     \label{tab:actors_roles}
 \end{table}
+%---------------------------------------------------------------------------------------------------------------conception de sprint 1
 
 
 
@@ -525,58 +751,19 @@ CHAPTER 2.  Sprint 0 \\
 
 
 
-\newpage
 
 
 
 
 %%---------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}
 
-
-
-\begin{table}[h]
-    \centering
-    \begin{tabularx}{\textwidth}{lX@{\hspace{1em}}c@{\hspace{7em}}c} 
-        \toprule
-        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority} & \textbf{\color{blue!70} Sprint} & \textbf{\color{blue!70} Estimation} \\ 
-        \midrule
-
-        As a user, I can contact other users & 2 & 1 & High \\
-        \midrule
-        As a User I can view recipes & 2 & 1& Medium \\
-        \midrule
-        As an admin, I can manage users & 2 & 1 & High \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{wlcm} 
-    \vspace{0.5cm}
-    
-    \textbf{Figure:} Home Page \\
-    The user interacts with this interface to sign in or log in. A sign-up form will pop up when the user presses the "Sign Up" button.
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Sign Up} 
-    \vspace{0.5cm}
-    
-    \textbf{Figure:} Sign Up Page \\
-    The user interacts with this interface to sign up for a new account.
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{LogIn} 
-    \vspace{0.5cm}
-    
-    \textbf{Figure:} Log In Page \\
-    If the user already has an account, a "Log In" page will appear when the Log In button is clicked.
-\end{figure}
-
+{\Large \textbf{3.5\hspace{1em}Realization of Sprint 1}}\vspace{0.2cm}
+\\\textbf{Realization of the user story “View Recipes”}\\
+The depicted figure showcases the View Recipes interface, empowering users to seamlessly access recipes, save their favorites, rate dishes, and connect with other users for culinary insights.\\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{ViewRecipes} 
@@ -585,6 +772,11 @@ CHAPTER 2.  Sprint 0 \\
     \textbf{Figure:} View Recipes Page \\
     The user can view other users' recipes using this interface.
 \end{figure}
+%--------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}
 
 \begin{figure}[htbp]
     \centering
@@ -603,7 +795,13 @@ CHAPTER 2.  Sprint 0 \\
     \textbf{Figure:} Contact Publisher Interface \\
     When the user clicks on the "Contact the Publisher" button, a small chat room will be created between the user and the publisher.
 \end{figure}
-
+%--------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}
+\\\textbf{Realization of the user story “Manage Users”}\\
+The depicted figure showcases the Manage Users interface, granting the admin comprehensive control over user management tasks such as updating, deleting, and overseeing user accounts. Additionally, the admin possesses the capability to manage and remove comments efficiently.\\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{ManageUser} 
@@ -621,7 +819,10 @@ CHAPTER 2.  Sprint 0 \\
     \textbf{Figure:} Update User Page \\
     The admin can update user information using this interface.
 \end{figure}
-
+\newpage
+\noindent
+CHAPTER 3.  Sprint 1 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{ManageRecipes} 
@@ -629,27 +830,24 @@ CHAPTER 2.  Sprint 0 \\
     
     \textbf{Figure:} Manage Recipes Interface \\
     The admin can manage recipes using this interface. Clicking the "View" button will display all comments on that recipe, allowing the admin to delete them. Clicking the "Update" button will open another page to update the recipe name and category.
-\end{figure}
+\end{figure}\\
+{\Large \textbf{3.6\hspace{1em}Conclusion}}\vspace{0.2cm}\\
+empty
+\newpage
+\section*{ \Huge General Conclusion}\vspace{0.5cm} 
+\setstretch{1.5}
+empty
+\newpage
+{\LARGE \textbf{\hspace{1em}Bibliography}}\vspace{0.5cm}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{edit} 
-    \vspace{0.5cm}
-    
-    \textbf{Figure:} Edit Recipe Page \\
-    The admin can edit recipes using this interface.
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{manegecat} 
-    \vspace{0.5cm}
-    
-    \textbf{Figure:} Manage Categories Interface \\
-    The admin can manage categories using this interface.
-\end{figure}
-
-
+\begin{itemize}
+    \item [1.] \url{https://code.visualstudio.com/docs}
+    \item [2.] \url{https://www.php.net/manual/fr/intro-whatis.php}
+    \item [3.] \url{https://angular.io/guide/what-is-angular}
+    \item [4.] \url{https://www.oracle.com/mysql/what-is-mysql/}
+    \item [5.] \url{https://www.apachefriends.org/fr/about.html}
+    \item [6.] \url{https://www.powerdesigner.biz/}
+\end{itemize}
 
 
 
