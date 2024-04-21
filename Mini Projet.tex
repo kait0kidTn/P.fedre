@@ -245,11 +245,9 @@ In our first chapter, we began by thoroughly detailing the requirements specific
         \toprule
         \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority} & \textbf{\color{blue!70} Sprint} & \textbf{\color{blue!70} Estimation} \\ 
         \midrule
-        As a user, I can authenticate & 1 & 0 & Medium \\
+        As a User, I can authenticate & 1 & 0 & Medium \\
         \midrule
         As a User, I can add recipes & 1 & 0 & Medium \\
-        \midrule
-        As an Admin, I can authenticate & 1 & 0 & Low \\
         \midrule
         As an admin, I can manage categories & 1 & 0 & Medium \\
         \bottomrule
@@ -273,30 +271,101 @@ CHAPTER 2.  Sprint 0 \\
 
 \begin{table}[h]
     \centering
-    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{2em}}c@{\hspace{2em}}c@{}}
+    \begin{tabularx}{\textwidth}{X|X}
         \toprule
-        \textbf{\color{blue!70} User Story} & \textbf{\color{blue!70} Priority}\\ 
+        Use Case Scenario & Authenticate \\
         \midrule
-        Use Case Scenario & 1\\
+        Actors & Administrator / User \\
         \midrule
-        As a User, I can add recipes & 1 \\
+        Pre-Conditions & The User must have an account \\
         \midrule
-        As an Admin, I can authenticate & 1\\
+        Post-Conditions & Authenticate \\
         \midrule
-        As an admin, I can manage categories & 1\\
+        Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
+            \item The user types the email and password
+            \item The user clicks on the login button
+            \item The system verifies the email and password If they are correct then :
+            \item The system redirects the user to the home page 
+            \item If not then :
+	  \item The system displays an alert to indicate the error
+        \end{itemize} \\
         \midrule
-        As a user, I can contact other users & 2\\
-        \midrule
-        As a User I can view recipes & 2 \\
+        Scenarios &  Give Opinions, View recipes \\
         \bottomrule
     \end{tabularx}
-    \caption{Product backlog}
-    \label{tab:user_stories}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
+\end{table}
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+{\large \textbf{Refinement of the user story ”Add Recipes”}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.3\textwidth]{Authenticate}
+    \caption{use case diagram “Add Recipes”}
+    \label{fig:design2}
+\end{figure}
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+        \toprule
+        Use Case Scenario & Add Recipes \\
+        \midrule
+        Actors & User \\
+        \midrule
+        Pre-Conditions & The user must be authenticated \\
+        \midrule
+        Post-Conditions & Recipe added  \\
+        \midrule
+        Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
+            \item The user clicks on the "+"(Add) button
+            \item The system displays the form interface
+            \item The user fills out the form and clicks on "Add"
+        \end{itemize} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
 \end{table}
 
-
-
-
+\newpage
+\noindent
+CHAPTER 2.  Sprint 0 \\
+\underline{\hspace{\textwidth}} \vspace{0.2cm}\\
+{\large \textbf{Refinement of the user story ”Manage Categories”}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Manage}
+    \caption{use case diagram “Manage Categories”}
+    \label{fig:design2}
+\end{figure}
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+        \toprule
+        Use Case Scenario & Manage Categories \\
+        \midrule
+        Actors & Admin \\
+        \midrule
+        Pre-Conditions & \begin{itemize}[label=$\bullet$]
+            \item The administrator must be authenticated
+            \item The system in operation
+        \end{itemize} \\
+        \midrule
+        Post-Conditions & Categories Managed  \\
+        \midrule
+        Describe Main Scenario &  \begin{itemize}[label=$\bullet$]
+            \item The system displays the interface
+            \item The admin chooses the operation
+            \item The system displays the interface according to the choice of the admin
+        \end{itemize} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Detailed description of the actors}
+    \label{tab:actors_roles}
+\end{table}
 
 
 
